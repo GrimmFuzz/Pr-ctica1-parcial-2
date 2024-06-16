@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(to bottom right, #443b3b, #443b3b);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1b1c1d;
+    font-family: 'Playfair Display', serif;
+    border-radius: 10px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#taskList .task-pending {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+#taskList .task-completed {
+    background-color: #d4edda;
+    border-radius: 10px;
+}
+
+#taskList .task-overdue {
+    background-color: #f8d7da;
+    border-radius: 10px;
+}
+
+#deletedTaskList .task-deleted {
+    background-color: #e2e3e5;
+    text-decoration: line-through;
+    border-radius: 10px;
+}
+
+.task-action-btn {
+    margin-left: 10px;
+    border-radius: 10px;
+}

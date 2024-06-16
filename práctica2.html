@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="práctica2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Gestión de Tareas</h1>
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskName">Nombre de la tarea</label>
+                <input type="text" class="form-control" id="taskName" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Fecha de inicio</label>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">Fecha fin</label>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="taskOwner">Responsable</label>
+                <input type="text" class="form-control" id="taskOwner" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Tarea</button>
+        </form>
+        <input type="text" id="searchTask" class="form-control my-4" placeholder="Buscar tarea...">
+        <div class="btn-group mb-4" role="group">
+            <button id="showAll" class="btn btn-secondary">Mostrar todas</button>
+            <button id="showOverdue" class="btn btn-danger">Mostrar vencidas</button>
+            <button id="showCompleted" class="btn btn-success">Mostrar resueltas</button>
+        </div>
+        <ul id="taskList" class="list-group my-4"></ul>
+        <h2 class="my-4">Tareas Eliminadas</h2>
+        <ul id="deletedTaskList" class="list-group my-4"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="práctica2.js"></script>
+</body>
+</html>
